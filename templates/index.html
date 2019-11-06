@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="p-0 m-0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeffrey Freeman | Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</head>
+
+<body class="p-0 m-0">
+    <div class="container-fluid p-0">
+        <div class="sidebar bg-dark navbar-dark">
+            <button type="button" id="sidebarClose" class="btn close-btn text-light">&times;</button>
+            <a class="about-link" href="{{ url_for('home') }}">About</a>
+            <a class="portfolio-link" href="{{ url_for('portfolio') }}">Portfolio</a>
+            <a class="contact-link" href="{{ url_for('contact') }}">Contact</a>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+            <button id="sidebarOpen" class="navbar-toggler" type="button" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="text-sm-left text-right">
+                <a class="navbar-brand mr-2" href="#"><span class="color-text">J</span>effrey <span
+                        class="color-text">F</span>reeman</a>
+                <a href="https://github.com/CiSigep" target="_blank"><img src="{{ url_for('static', filename='images/GitHub-Mark-Light-64px.png') }}"
+                        alt="github" class="nav-img pb-1"></a>
+                <a href="https://www.linkedin.com/in/jeffrey-f-2171ba181/" target="_blank"><img
+                        src="{{ url_for('static', filename='images/LI-In-Bug.png') }}" alt="LinkedIn" class="nav-img ml-1 pb-1"></a>
+                <a href="{{ url_for('static', filename='pdf/Jeffrey_Freeman_Resume.pdf') }}" target="_blank"><img src="{{ url_for('static', filename='images/resumeicon.png') }}"
+                        alt="Resume" class="nav-img pb-1"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link about-link" href="{{ url_for('home') }}">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link portfolio-link" href="{{ url_for('portfolio') }}">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row mx-2 mb-3">
+            {%block content%}
+            {%endblock%}
+        </div>
+    </div>
+</body>
+
+</html>

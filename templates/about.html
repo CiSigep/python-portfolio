@@ -1,0 +1,58 @@
+{%extends "index.html"%}
+{%block content%}
+<div id="contentBlock" class="col-12 content-block" data-block="about">
+    <div class="card bg-dark text-light">
+        <div class="card-body">
+            <h3 class="card-title">About Me</h3>
+            <hr class="border-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/prof.png') }}" alt="Profile Image"
+                            class="img-fluid border border-white rounded">
+                    </div>
+                    <div class="col-lg-10 col-md-6 col-12">
+                        <p>
+                            I'm a developer who has been trying to get myself back into the industry for a
+                            while now. I enjoy Video Games, Tabletop Games, and new gadgets. I got into
+                            development because I spent most of my time on the computer and wanted to know
+                            how it worked software-wise. Development is very interesting to me as it
+                            increases my understanding of computers and how they can make pretty much
+                            anything easier for those who use them. Nowadays, web applications are getting
+                            more and more prominent as they don't need to be installed and you can access
+                            them by web browser. I'd like to learn as much as I can about them.
+                        </p>
+                        <p>
+                            I am familiar with Object-Oriented Languages such as C# and Java, for which I am
+                            an Oracle Certified Associate (OCA) for Java 8 SE. Several of the technologies I
+                            am familiar with and have worked on projects for are all Java EE technologies
+                            like WebLogic Server, Java Server Pages (JSPs), Spring, Hibernate, and Maven.
+                            Picking up new technologies is something I am very good at. Show me something I
+                            don't know and how to work it, I can figure it out and make use of it rather
+                            quickly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-md-0 mb-2">
+                        Certifications:
+                        <div class="pl-sm-2 pl-0 mt-3">
+                            <img src="{{ url_for('static', filename='images/O_Java-SE-8-OCA-clr.bmp') }}" alt="Java 8 Certification"
+                                class="img-fluid mh-100px bg-white rounded">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        Languages: Java, C#, NodeJS, HTML5 CSS, SQL, Javascript, Bash <br>
+                        Frameworks: SpringMVC, JSPs, jUnit, Hibernate, ExpressJS, Handlebars, Bootstrap,
+                        jQuery <br>
+                        Other: Object-Oriented Programming, Computer Science Fundamentals
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

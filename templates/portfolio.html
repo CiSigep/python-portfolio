@@ -1,0 +1,178 @@
+{%extends "index.html"%}
+{%block content%}
+<div id="contentBlock" class="col-12 content-block" data-block="portfolio">
+    <div class="card bg-dark text-light">
+        <div class="card-body">
+            <h3 class="card-title">Portfolio</h3>
+            <hr class="border-white">
+            <div class="container-fluid">
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/MK.png') }}" alt="Musician's Keeper"
+                            class="img-fluid border rounded border-white">
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <h4 class="font-italic">Musician's Keeper</h4>
+                        <div>
+                            Links:
+                            <a href="https://github.com/CiSigep/Musicians-Keeper"
+                                class="text-white border-right border-white px-2"
+                                target="_blank">Repository</a>
+                            <a href="http://musicianskeeper.herokuapp.com" class="text-white px-1"
+                                target="_blank">Heroku</a>
+                        </div>
+                        <div>Description:</div>
+                        <div>
+                            <p>
+                                An expense tracker to help self-employed musicians keep track of their
+                                expenses in preparation for tax day. A user can login and log expenses that
+                                they can write off on their taxes. They add the date, name, and amount to
+                                the category the expense falls in. They can then add a picture of the
+                                receipt as proof of their purchases, or delete the expense if they made a
+                                mistake. Uses React, NodeJS, Express, Sequelize, PassportJS, JWTs, and
+                                Material-UI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/careminder.png') }}" alt="CareMinder"
+                            class="img-fluid border rounded border-white">
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <h4 class="font-italic">CareMinder</h4>
+                        <div>
+                            Links:
+                            <a href="https://github.com/CiSigep/CareMinder"
+                                class="text-white border-right border-white px-2"
+                                target="_blank">Repository</a>
+                            <a href="http://careminderbc.herokuapp.com" class="text-white px-1"
+                                target="_blank">Heroku</a>
+                        </div>
+                        <div>Description:</div>
+                        <div>
+                            <p>
+                                An app for caregivers to keep track of the ones they are taking care of.
+                                Caregivers can log in to the app to access all the people they are taking
+                                care of. After selecting one, they will be take to that patient's calendar,
+                                where they can add tasks, which can cover anything from doctor's
+                                appointments to medicine taking, or bills, which cover any of their monetary
+                                transactions. Uses NodeJS, Express, HandleBars, Sequelize, PassportJS,
+                                Bootstrap, jQuery, and FullCalendar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/MC.png') }}" alt="Magic Carpet"
+                            class="img-fluid border rounded border-white">
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <h4 class="font-italic">Magic Carpet</h4>
+                        <div>
+                            Links:
+                            <a href="https://github.com/CiSigep/BC-Project-One"
+                                class="text-white border-right border-white px-2"
+                                target="_blank">Repository</a>
+                            <a href="http://cisigep.github.io/BC-Project-One" class="text-white px-1"
+                                target="_blank">Pages</a>
+                        </div>
+                        <div>Description:</div>
+                        <div>
+                            <p>
+                                Welcome aboard the Magic Carpet! A Web Application that aggregates travel
+                                information for a travelers viewing. It allows the user to view flight
+                                quotes between cities, see events in said cities, and if they're going
+                                quickly, some weather in the form of a 5-day forecast. Users can click on
+                                things in the displayed information to highlight them and click save to save
+                                their work, or clear to start the whole process again. Uses Bootstrap,
+                                jQuery, jQuery Validator, HTML, and CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/gbooks.png') }}" alt="Google Books Search"
+                            class="img-fluid border rounded border-white">
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <h4 class="font-italic">Google Books Search</h4>
+                        <div>
+                            Links:
+                            <a href="https://github.com/CiSigep/google-books-search"
+                                class="text-white border-right border-white px-2"
+                                target="_blank">Repository</a>
+                            <a href="https://gbooksbc.herokuapp.com/" class="text-white px-1"
+                                target="_blank">Heroku</a>
+                        </div>
+                        <div>Description:</div>
+                        <div>
+                            <p>
+                                A books search app that searches for books using the Google Books API. Users
+                                can search for and save books for later viewing. The app has a view button
+                                so the user can go look at the book in the Google Books app. Uses Bootstrap,
+                                HTML5, React, NodeJS, Express, and MongoDB.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/MS.png') }}" alt="MongoScraper"
+                            class="img-fluid border rounded border-white"></div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <h4 class="font-italic">MongoScraper</h4>
+                        <div>
+                            Links:
+                            <a href="https://github.com/CiSigep/MongoScraper"
+                                class="text-white border-right border-white px-2"
+                                target="_blank">Repository</a>
+                            <a href="https://mongoscraperbc.herokuapp.com/" class="text-white px-1"
+                                target="_blank">Heroku</a>
+                        </div>
+                        <div>Description:</div>
+                        <div>
+                            <p>
+                                This app is a news article scraping app that grabs articles from
+                                GlobeNewswire and displays them on its page. The user can save the articles
+                                and view them on the saved articles page. Once there they can add notes to
+                                the saved articles. This application is a NodeJS app that uses cheerio to
+                                scrape, MongoDB for data storage, and handlebars to display the pages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-md-0">
+                        <img src="{{ url_for('static', filename='images/Clicky.png') }}" alt="Arcana Clicker"
+                            class="img-fluid border rounded border-white">
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <h4 class="font-italic">Arcana Clicker</h4>
+                        <div>
+                            Links:
+                            <a href="https://github.com/CiSigep/clicky-game"
+                                class="text-white border-right border-white px-2"
+                                target="_blank">Repository</a>
+                            <a href="https://cisigep.github.io/clicky-game/" class="text-white px-1"
+                                target="_blank">Pages</a>
+                        </div>
+                        <div>Description:</div>
+                        <div>
+                            <p>
+                                A memory game Where the user must click a card that they have not clicked
+                                before. The user earns points for clicking cards that they have not clicked
+                                yet, but loses once they click a card they already have clicked. Created
+                                with React.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
